@@ -52,10 +52,11 @@
     "styled-components": "^5.2.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "install:personal": "npm_config_userconfig=./.npmrc npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -71,5 +72,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0"
   }
 }
